@@ -4,27 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Me Something</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-      *{
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-      }
-    </style>
   </head>
   <body>
     <article>
-      <header id="mainHeading">
+      <header>
           <div>
-            <h1>Plant Life</h1>
-            <p id="testP" class="funParagraph"><em>Welcome to the jungle!</em></p>
+            <h1 id="mainHeading">Plant Life</h1>
+            <p><em>Welcome to the jungle!</em></p>
           </div>
         </div>
       </header>
     </article>
     <main>
-      <div class="row">
-        <div class="column">
+      <section>
+      <div class="grid-container">
+        
           <img
             src="images/IMG-3018.jpg"
             alt="Pothos"
@@ -67,8 +61,6 @@
             width="500"
             height="600"
           />
-        </div>
-        <div class="column">
           <img
             src="images/IMG-3038.jpg"
             alt="Burros tail succulent"
@@ -99,11 +91,11 @@
             width="500"
             height="600"
           />
-        </div>
       </div>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2022 Sara Nelson</p>
+      <h3 class="credit"><a href="https://github.com/saranell" target="_blank">&copy; 2022 Sara Nelson</a></h3>
     </footer>
   </body>
 </html>
