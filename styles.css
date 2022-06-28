@@ -25,6 +25,12 @@ h1 {
   margin: 0px 0px 10px;
 }
 
+article {
+  text-align: center;
+  font-size: medium;
+  padding: 20px 10px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -32,6 +38,17 @@ h1 {
   padding: 10px;
   justify-content: space-evenly;
 }
+
+img {
+  padding-bottom: 80px;
+  opacity: 70%;
+  transition: 0.3s ease-out;
+  filter: saturate(1);
+}
+img:hover {
+  filter: saturate(2);
+}
+
 .credit {
   text-align: center;
   z-index: 999;
