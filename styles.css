@@ -19,6 +19,10 @@ header {
   color: red;
 }
 
+#testP {
+  color: green;
+}
+
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -45,8 +49,14 @@ img {
   transition: 0.3s ease-out;
   filter: saturate(1);
 }
-img:hover {
-  filter: saturate(2);
+
+.imghover {
+  position: relative;
+  max-width: 500px;
+}
+
+.imghover img {
+  width: 100%;
 }
 
 .credit {
