@@ -7,9 +7,10 @@
   </head>
   <body>
     <header>
-      <h1 id="mainHeading">Plant Life</h1>
+      <h1>Plant Life</h1>
       <h2><em>Welcome to the jungle</em></h2>
     </header>
+    <h3 id="mainHeading">red heading</h3>
     <article>
       <p id="testP" class="funParagraph">
         Here are some of the plants that are in my care. They range from easy
@@ -20,12 +21,19 @@
     <main>
       <section>
         <div class="grid-container">
-          <img
-            src="images/IMG-3018.jpg"
-            alt="Pothos"
-            width="500"
-            height="600"
-          />
+          <div class="images">
+            <img
+              class="image"
+              src="images/IMG-3018.jpg"
+              alt="Pothos"
+              width="500"
+              height="600"
+            />
+            <div class="imageOverlay">
+              <div class="plantName">Pothos</div>
+              <p class="imageDescription">This is a Silver Satin Pothos.</p>
+            </div>
+          </div>
           <img
             src="images/IMG-3022.jpg"
             alt="Air plants"
@@ -98,7 +106,8 @@
     <footer>
       <h3 class="credit">
         <a href="https://github.com/saranell" target="_blank"
-          >&copy; 2022 Sara Nelson</a>
+          >&copy; 2022 Sara Nelson</a
+        >
       </h3>
     </footer>
   </body>
