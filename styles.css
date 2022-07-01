@@ -65,8 +65,41 @@ img {
   height: 100%;
   background: rgb(0, 0, 0, 0.6);
   color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 
+.imageOverlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.imageOverlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.imageOverlay:hover {
+  opacity: 1;
+}
+
+.imageOverlay:hover > * {
+  transform: translateY(0);
+}
+
+.plantName {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.imageDescription {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
 .credit {
   text-align: center;
   z-index: 999;
